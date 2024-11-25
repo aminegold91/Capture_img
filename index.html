@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capture Image</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+    video, canvas {
+      border: 2px solid #333;
+      border-radius: 8px;
+    }
+    canvas {
+      display: none;
+    }
+    .card{
+      width: 400px;
+      height:;
+      background: red;
+      overflow: scroll;
+      display: flex;
+      padding: 15px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .card img{
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin:10px;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" hidden autoplay playsinline></video>
+  <canvas id="canvas"></canvas>
+  
+  <div class="card">
+    <div class="im"></div>
+  </div>
+
+
+<script src="main.js"></script>
+</body>
+</html>
